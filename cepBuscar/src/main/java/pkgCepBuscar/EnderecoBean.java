@@ -18,11 +18,13 @@ public class EnderecoBean {
 	private Endereco endereco;
 	private EnderecoDAO enderecoDAO;
 	private List<Endereco> enderecos;
+	private Emails emails;
 
 	public EnderecoBean() {
 		endereco = new Endereco();
 		enderecoDAO = new EnderecoDAO();
 		enderecos = enderecoDAO.getListaEndereco();
+		emails = new Emails();
 	}
 
 	// GET
@@ -54,6 +56,7 @@ public class EnderecoBean {
 	public void adicionar() {
 		enderecoDAO.save(endereco);
 		enderecos.add(endereco);
+		emails.enviarEmail();
 		endereco = new Endereco();
 	}
 
