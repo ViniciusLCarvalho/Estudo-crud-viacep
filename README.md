@@ -1,3 +1,11 @@
-# crud-viacep
+<h1>Estudo consumo arquivo JSON</h1>
 
-* Consumo de arquivo Json através do Webservice ViaCep.com.br.
+<h2>Sobre</h2>
+<p>Consumo de arquivo Json através do Webservice ViaCep.com.br.</p>
+
+## Tecnologias
+<div>
+  <p>* HTML</p>
+  <p>* JAVA</p>
+  <p>* MySql </p>
+</div>
